@@ -4,7 +4,9 @@ Petit **jeu de mots mélangés** jouable dans le navigateur : retrouve le mot ca
 
 ## 🎮 Jouer
 
-Ouvre simplement `index.html` dans un navigateur (aucune installation nécessaire) — ou rendez-vous sur la version en ligne si elle est déployée.
+🎮 **Jouer en ligne :** <https://samuel-12094.github.io/mot_m-anger/>
+
+Sinon, ouvre simplement `index.html` dans un navigateur (aucune installation nécessaire).
 
 ## ✨ Fonctionnalités
 
