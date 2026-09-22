@@ -1,30 +1,43 @@
-# mot_m-anger
+# mot_m-anger 🍕
 
-Petit **jeu de mots interactif** développé en HTML5, CSS3 et JavaScript.
+Petit **jeu de mots mélangés** jouable dans le navigateur : retrouve le mot caché à partir de lettres mélangées, avant la fin du temps !
 
-> 🚧 Projet **en cours de développement** — le code source sera bientôt disponible dans ce dépôt.
+## 🎮 Jouer
 
-## Concept
+Ouvre simplement `index.html` dans un navigateur (aucune installation nécessaire) — ou rendez-vous sur la version en ligne si elle est déployée.
 
-Un jeu de lettres et de mots : le joueur doit retrouver des mots à partir de lettres mélangées, en français.
+## ✨ Fonctionnalités
 
-## Prévu
+- 3 niveaux de difficulté (Facile / Moyen / Difficile), 5 mots par partie
+- Clic sur les lettres pour reconstituer le mot (ou clic sur une case déjà remplie pour retirer la lettre)
+- Chronomètre avec barre de progression
+- Score avec bonus de temps, et **meilleur score sauvegardé** (`localStorage`)
+- Indices (2 par mot) et bouton pour mélanger les lettres
+- Interface responsive, jouable sur mobile
+- Mots 100 % en français
 
-- Plusieurs niveaux et mots à deviner
-- Minuterie et comptage de points
-- Interface responsive jouable sur mobile
-- Score et progression sauvegardés localement
+## 🛠 Stack
 
-## Stack
+- HTML5
+- CSS3
+- JavaScript (vanilla, sans dépendance)
 
-- HTML5 / CSS3
-- JavaScript (vanilla)
+## 📁 Structure
 
-## Roadmap
+```
+index.html       # interface du jeu
+style.css        # styles (responsive)
+words.js         # listes de mots par difficulté
+script.js        # logique du jeu
+```
 
-- [ ] Écran de jeu et logique de mélange des mots
-- [ ] Gestion des niveaux et des scores
-- [ ] Intégration de nouveaux mots
+## 🚧 Roadmap
+
+- [x] Logique de mélange et de vérification des mots
+- [x] Interface de jeu et niveaux
+- [x] Indices, scores, chronomètre
+- [ ] Ajout d'une banque de mots plus large
+- [ ] Modes de jeu supplémentaires (contre-la-montre, sans faute)
 
 ---
 

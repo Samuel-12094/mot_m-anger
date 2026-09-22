@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mot m'anger — jeu de mots mélangés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="hud">
+      <h1 class="logo">mot&nbsp;m'&nbsp;anger</h1>
+      <div class="hud-stats">
+        <div class="stat"><span class="stat-label">Niveau</span><span id="level" class="stat-value">1</span></div>
+        <div class="stat"><span class="stat-label">Score</span><span id="score" class="stat-value">0</span></div>
+        <div class="stat"><span class="stat-label">Meilleur</span><span id="best" class="stat-value">0</span></div>
+      </div>
+    </header>
+
+    <section class="panel" id="start-panel">
+      <h2>Retrouve le mot</h2>
+      <p class="sub">Les lettres sont mélangées. Clique pour les reconstituer avant la fin du temps !</p>
+      <div class="level-picker">
+        <button class="lv" data-level="1">Facile</button>
+        <button class="lv" data-level="2">Moyen</button>
+        <button class="lv" data-level="3">Difficile</button>
+      </div>
+      <button id="start-btn" class="btn primary">Commencer</button>
+    </section>
+
+    <section class="panel hidden" id="game-panel">
+      <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+      <div class="word-count">Mot <span id="current">1</span>/<span id="total">5</span></div>
+      <div class="slots" id="slots"></div>
+      <div class="letters" id="letters"></div>
+      <div class="actions">
+        <button id="hint-btn" class="btn ghost">💡 Indice</button>
+        <button id="shuffle-btn" class="btn ghost">🔀 Mélanger</button>
+        <button id="validate-btn" class="btn primary">Valider</button>
+      </div>
+      <div id="feedback" class="feedback"></div>
+    </section>
+
+    <section class="panel hidden" id="end-panel">
+      <h2 id="end-title">Partie terminée !</h2>
+      <p id="end-score" class="sub"></p>
+      <button id="replay-btn" class="btn primary">Rejouer</button>
+      <button id="menu-btn" class="btn ghost">Menu</button>
+    </section>
+  </div>
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
